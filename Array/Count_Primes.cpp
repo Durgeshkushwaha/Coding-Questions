@@ -8,7 +8,7 @@ int countPrimes(int n)
     if (n <= 2)
         return 0;
 
-    vector<bool> isPrime(n, true);
+    vector<bool> isPrime(n, true);   // Sieve of Eratosthenes algorithm
     isPrime[0] = isPrime[1] = false;
 
     for (int i = 2; i * i < n; i++)
