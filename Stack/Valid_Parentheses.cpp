@@ -25,10 +25,11 @@ bool isValid(string s)
 
 int main()
 {
-    string s = "()[]{}";
-
+    string s;
+    cout << "Enter the string\n";
+    cin >> s;
     bool ans = isValid(s);
-     if(ans) cout <<true;
-     else cout <<false;
+    ans ? cout << "The given parentheses is Valid\n" : cout << "The given parentheses is not valid\n";
+    main();  // to run the function again for taking the next input
     return 0;
 }
